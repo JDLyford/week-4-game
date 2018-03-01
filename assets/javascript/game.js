@@ -16,6 +16,12 @@ function round() {
     $("#score").empty();
     $("#score").text("0");
     ranNum();
+    $(".gem").each(function( index ) {
+        $(this).val(Math.floor(Math.random() * 8) + 1);
+        console.log(("Value of each gem " + $(this).val()));
+    });
+    
+    
 }
 
 function ranNum() {
